@@ -1,0 +1,638 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block content %}
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+
+<!--<head>-->
+<!--  <meta charset="utf-8">-->
+<!--  <meta content="width=device-width, initial-scale=1.0" name="viewport">-->
+
+<!--  <title>E-School</title>-->
+<!--  <meta content="" name="description">-->
+<!--  <meta content="" name="keywords">-->
+
+<!--  &lt;!&ndash; Favicons &ndash;&gt;-->
+<!--  <link href="{% static 'images/favicon.jpg' %}" rel="icon">-->
+<!--  <link href="{%static 'images/favicon.jpg'%}" rel="apple-touch-icon">-->
+
+<!--  &lt;!&ndash; Google Fonts &ndash;&gt;-->
+<!--  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">-->
+
+<!--  &lt;!&ndash; Vendor CSS Files &ndash;&gt;-->
+<!--  <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet">-->
+<!--  <link href="{% static  'vendor/aos/aos.css'%}" rel="stylesheet">-->
+<!--  <link href="{% static  'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">-->
+<!--  <link href="{% static  'vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">-->
+<!--  <link href="{% static  'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">-->
+<!--  <link href="{% static  'vendor/remixicon/remixicon.css' %}" rel="stylesheet">-->
+<!--  <link href="{% static  'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">-->
+
+<!--  &lt;!&ndash; Template Main CSS File &ndash;&gt;-->
+
+<!--  <link rel="stylesheet" type="text/css" href="{% static 'css/style1.css' %}"/>-->
+
+<!--  &lt;!&ndash; =======================================================-->
+<!--  * Template Name: Mentor - v4.7.0-->
+<!--  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/-->
+<!--  * Author: BootstrapMade.com-->
+<!--  * License: https://bootstrapmade.com/license/-->
+<!--  ======================================================== &ndash;&gt;-->
+<!--</head>-->
+
+<!--<body>-->
+
+<!--  &lt;!&ndash; ======= Header ======= &ndash;&gt;-->
+<!--  <header id="header" class="fixed-top">-->
+<!--    <div class="container d-flex align-items-center">-->
+<!--        <a  class="logo me-auto"><img src="{% static 'images/school.jpeg'%}" alt="" class="img-fluid" width="250px" height="200px"></a>-->
+<!--      {% comment %} <h1 class="logo me-auto">E-Learning</a></h1> {% endcomment %}-->
+
+
+
+<!--      <nav id="navbar" class="navbar order-last order-lg-0">-->
+<!--        <ul>-->
+<!--          <li><a class="active">Home</a></li>-->
+<!--          <li><a>About</a></li>-->
+
+<!--          <li><a href="events.html">Events</a></li>-->
+
+
+<!--          <li class="dropdown"><a href="#"><span>Courses</span> <i class="bi bi-chevron-down"></i></a>-->
+<!--            <ul>-->
+<!--              <li>HTML</li>-->
+<!--              <li class="dropdown"><a href="#"><span>JavaScript</span> <i class="bi bi-chevron-right"></i></a>-->
+<!--                <ul>-->
+<!--                  <li><a href="#">ReactJS</a></li>-->
+<!--                  <li><a href="#">jQuery</a></li>-->
+<!--                  <li><a href="#">Json</a></li>-->
+<!--                  <li><a href="#">Ajax</a></li>-->
+<!--                  <li><a href="#">AngularJs</a></li>-->
+<!--                </ul>-->
+<!--              </li>-->
+<!--              <li><a href="#">Python</a></li>-->
+<!--              <li><a href="#">Java</a></li>-->
+<!--              <li><a href="#">.Net</a></li>-->
+<!--            </ul>-->
+<!--          </li>-->
+<!--          <li>Online Assessment</a></li>-->
+<!--          <li>Contact</a></li>-->
+<!--          <li class="dropdown"><a href="#"><span>{{user.username}}</span> <i class="bi bi-chevron-down"></i></a>-->
+<!--            <ul>-->
+<!--              <li>Logout</a></li>-->
+<!--            </ul>-->
+<!--          </li>-->
+<!--          <li><a href="#"></a></li>-->
+<!--        </ul>-->
+<!--        <i class="bi bi-list mobile-nav-toggle"></i>-->
+
+<!--  </header>&lt;!&ndash; End Header &ndash;&gt;-->
+
+<!--  &lt;!&ndash; ======= Hero Section ======= &ndash;&gt;-->
+<!--  <section id="hero" class="d-flex justify-content-center align-items-center">-->
+<!--    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">-->
+<!--      {% comment %} <img src="{% static 'images/cover.jpeg' %}"> {% endcomment %}-->
+<!--      {% comment %} <h1>Learning Today,<br>Leading Tomorrow</h1> {% endcomment %}-->
+
+
+<!--    </div>-->
+<!--  </section>&lt;!&ndash; End Hero &ndash;&gt;-->
+
+<!--  <main id="main">-->
+
+<!--    &lt;!&ndash; ======= About Section ======= &ndash;&gt;-->
+<!--    <section id="about" class="about">-->
+<!--      <div class="container" data-aos="fade-up">-->
+<!--        <div class="row">-->
+<!--          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">-->
+<!--            <div class="schoolvideo">-->
+<!--              <video width="500" height="500" poster="{% static 'images/schoolvideo.jpeg' %}" controls>-->
+<!--                <source src="static/videos/eschoolvideo.mp4">-->
+<!--                Your browser does not support the html video tag.-->
+<!--              </video>-->
+<!--              {% comment %} <a href="https://www.youtube.com/watch?v=jz2Xeo-aubw&ab_channel=eSchoolApp" target="_self"><img src="{% static 'images/schoolvideo.jpeg' %}" class="img-fluid" alt=""></a> {% endcomment %}-->
+<!--            </div>-->
+<!--            {% comment %} <img src="{% static  'images/schoolvideo.jpeg' %}" class="img-fluid" alt=""> {% endcomment %}-->
+<!--          </div>-->
+<!--          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">-->
+<!--            <h2><b>What is E-School ?</b></h2>-->
+<!--            <p class="fst-italic">-->
+<!--            <h3>Take your school to cloud 9 with eSchoolApp!</h3>-->
+<!--              “eSchoolApp is a state of art cloud-based Educational Institution Management Software, which helps School, Preschools, Colleges, Coaching Classes manage complex functions. This can be Fees, Results, Attendance, Library, Stock, Timetable, Staff, Salary, Notifications, Scholar, Documents, Transport, online exam, Hostel, etc.-->
+<!--              It features a revolutionary mobile/tablet communication tool between an institute, its staff, its students, and their parents. In this way it keeps all stockholders informed, happy, and impressed .”-->
+<!--            </p>-->
+
+<!--        {% comment %} <div class="row">-->
+<!--          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">-->
+<!--            <img src="{% static  'images/about1.jpg' %}" class="img-fluid" alt="">-->
+<!--          </div>-->
+<!--          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">-->
+<!--            <h2>What is E-School ?</h2>-->
+<!--            <p class="fst-italic">-->
+<!--              <h3>Take your school to cloud 9 with eSchoolApp!</h3>-->
+<!--              “eSchoolApp is a state of art cloud-based Educational Institution Management Software, which helps School, Preschools, Colleges, Coaching Classes manage complex functions. This can be Fees, Results, Attendance, Library, Stock, Timetable, Staff, Salary, Notifications, Scholar, Documents, Transport, online exam, Hostel, etc.-->
+<!--              It features a revolutionary mobile/tablet communication tool between an institute, its staff, its students, and their parents. In this way it keeps all stockholders informed, happy, and impressed .”-->
+<!--            </p> {% endcomment %}-->
+<!--            <ul>-->
+<!--              <li><i class="bi bi-check-circle"></i>Students can interact with their peers from all around the world through group discussions and private chats.</li>-->
+<!--              <li><i class="bi bi-check-circle"></i> This makes it easy for students to access their online classes anywhere and anytime..</li>-->
+<!--              <li><i class="bi bi-check-circle"></i> Efficient way of delivering courses as the resources are available from anywhere and at any time;.</li>-->
+<!--            </ul>-->
+<!--            <p>-->
+<!--              Also, the video and audio materials can be re-winded as many times as you need to understand the topic-->
+<!--            </p>-->
+
+<!--          </div>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </section>&lt;!&ndash; End About Section &ndash;&gt;-->
+
+<!--    &lt;!&ndash; ======= Counts Section ======= &ndash;&gt;-->
+<!--    <section id="counts" class="counts section-bg">-->
+<!--      <div class="container">-->
+
+<!--        <div class="row counters">-->
+
+<!--          <div class="col-lg-3 col-6 text-center">-->
+<!--            <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" class="purecounter"></span>-->
+<!--            <p>Students</p>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-3 col-6 text-center">-->
+<!--            <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" class="purecounter"></span>-->
+<!--            <p>Courses</p>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-3 col-6 text-center">-->
+<!--            <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>-->
+<!--            <p>Events</p>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-3 col-6 text-center">-->
+<!--            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>-->
+<!--            <p>Trainers</p>-->
+<!--          </div>-->
+
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </section>&lt;!&ndash; End Counts Section &ndash;&gt;-->
+
+<!--    &lt;!&ndash; ======= Why Us Section ======= &ndash;&gt;-->
+<!--    <section id="why-us" class="why-us">-->
+<!--      <div class="container" data-aos="fade-up">-->
+
+<!--        <div class="row">-->
+<!--          <div class="col-lg-4 d-flex align-items-stretch">-->
+<!--            <div class="content">-->
+<!--              <h3>Why E-School?</h3>-->
+<!--              <p>-->
+<!--                Yes, eSchool is flexible, scalable, reliable, inexpensive, robust, easy to use, secure and all the other good adjectives in the dictionary. But what gives us the edge over the competition?-->
+<!--                We give you all the right reasons! Other than the awesomeness which is hardwired into eSchool, we offer the following unique benefits.-->
+<!--              </p>-->
+<!--              <div class="text-center">-->
+<!--                <a href="about.html" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">-->
+<!--            <div class="icon-boxes d-flex flex-column justify-content-center">-->
+<!--              <div class="row">-->
+<!--                <div class="col-xl-4 d-flex align-items-stretch">-->
+<!--                  <div class="icon-box mt-4 mt-xl-0">-->
+<!--                    <img src="{% static 'images/courses/achievement.png' %}">-->
+<!--                    <h4>Achievement</h4>-->
+<!--                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-xl-4 d-flex align-items-stretch">-->
+<!--                  <div class="icon-box mt-4 mt-xl-0">-->
+<!--                    <img src="{% static 'images/courses/vision.png' %}">-->
+<!--                    <h4>Our Vision</h4>-->
+<!--                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-xl-4 d-flex align-items-stretch">-->
+<!--                  <div class="icon-box mt-4 mt-xl-0">-->
+<!--                    <img src="{% static 'images/courses/mission.png' %}">-->
+<!--                    <h4>Mission</h4>-->
+<!--                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End .content&ndash;&gt;-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </section>&lt;!&ndash; End Why Us Section &ndash;&gt;-->
+
+<!--    &lt;!&ndash; ======= Features Section ======= &ndash;&gt;-->
+<!--    <section id="features" class="features">-->
+<!--      <div class="container" data-aos="fade-up">-->
+
+<!--        <div class="row" data-aos="zoom-in" data-aos-delay="100">-->
+<!--          <div class="col-lg-3 col-md-4 mt-4">-->
+<!--            <div class="icon-box">-->
+<!--              <img src="{% static 'images/courses/angular.jpeg' %}">-->
+<!--              <h3><a href="">Angular</a></h3>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-lg-3 col-md-4 mt-4 ">-->
+<!--            <div class="icon-box">-->
+<!--              <img src="{% static 'images/courses/json.png' %}">-->
+<!--              <h3><a href="">JSON</a></h3>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-lg-3 col-md-4 mt-4 ">-->
+<!--            <div class="icon-box">-->
+<!--              <img src="{% static 'images/courses/mongodb.png' %}">-->
+<!--              <h3><a href="">MongoDb</a></h3>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-lg-3 col-md-4 mt-4">-->
+<!--            <div class="icon-box" id="html">-->
+<!--              <img src="{% static 'images/courses/html.png' %}">-->
+<!--              <h3><a href="">HTML</a></h3>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-lg-3 col-md-4 mt-4">-->
+<!--            <div class="icon-box">-->
+<!--              <img src="{% static 'images/courses/js.jpeg' %}">-->
+<!--              <h3><a href="">Javascript</a></h3>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-lg-3 col-md-4 mt-4">-->
+<!--            <div class="icon-box">-->
+<!--              <img src="{% static 'images/courses/react50.png' %}">-->
+<!--              <h3><a href="">Reactjs</a></h3>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-lg-3 col-md-4 mt-4">-->
+<!--            <div class="icon-box">-->
+<!--              <img src="{% static 'images/courses/python.jpeg' %}">-->
+<!--              <h3><a href="">Python</a></h3>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-lg-3 col-md-4 mt-4">-->
+<!--            <div class="icon-box">-->
+<!--              <img src="{% static 'images/courses/java.png' %}">-->
+<!--              <h3><a href="">Java</a></h3>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-lg-3 col-md-4 mt-4">-->
+<!--            <div class="icon-box">-->
+<!--              <img src="{% static 'images/courses/kotlin.png' %}">-->
+<!--              <h3><a href="">Kotlin</a></h3>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-lg-3 col-md-4 mt-4">-->
+<!--            <div class="icon-box">-->
+<!--              <img src="{% static 'images/courses/nodejs.png' %}">-->
+<!--              <h3><a href="">&nbsp;&nbsp;Nodejs</a></h3>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-lg-3 col-md-4 mt-4">-->
+<!--            <div class="icon-box">-->
+<!--              <img src="{% static 'images/courses/aws.png' %}">-->
+<!--              <h3><a href="">&nbsp;&nbsp;AWS</a></h3>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-lg-3 col-md-4 mt-4">-->
+<!--            <div class="icon-box">-->
+<!--              <img src="{% static 'images/courses/jquery.png' %}">-->
+<!--              <h3><a href="">&nbsp;&nbsp;JQuery</a></h3>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </section>&lt;!&ndash; End Features Section &ndash;&gt;-->
+
+<!--    &lt;!&ndash; ======= Popular Courses Section ======= &ndash;&gt;-->
+<!--    <section id="popular-courses" class="courses">-->
+<!--      <div class="container" data-aos="fade-up">-->
+
+<!--        <div class="section-title">-->
+<!--          <h2>Courses</h2>-->
+<!--          <p>Popular Courses</p>-->
+<!--        </div>-->
+
+<!--        <div class="row" data-aos="zoom-in" data-aos-delay="100">-->
+
+<!--          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">-->
+<!--            <div class="course-item">-->
+<!--              <img src="{% static 'images/course-1.jpg' %}" class="img-fluid" alt="...">-->
+<!--              <div class="course-content">-->
+<!--                <div class="d-flex justify-content-between align-items-center mb-3">-->
+<!--                  <h4>Web Development</h4>-->
+<!--                  <p class="price">₹500</p>-->
+<!--                </div>-->
+
+<!--                <h3><a href="course-details.html">Website Design</a></h3>-->
+<!--                <p>Learn to code and become a Web developer in 2022 with HTML,CSS,Javascript,React & more!</p>-->
+<!--                <div class="trainer d-flex justify-content-between align-items-center">-->
+<!--                  <div class="trainer-profile d-flex align-items-center">-->
+<!--                    <img src="{% static 'images/trainers/jainish.jpeg' %}"  class="img-fluid" alt="">-->
+<!--                    <span>Your Name</span>-->
+<!--                  </div>-->
+<!--                  <div class="trainer-rank d-flex align-items-center">-->
+<!--                    <i class="bx bx-user"></i>&nbsp;50-->
+<!--                    &nbsp;&nbsp;-->
+<!--                    <i class="bx bx-heart"></i>&nbsp;65-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div> &lt;!&ndash; End Course Item&ndash;&gt;-->
+
+<!--          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">-->
+<!--            <div class="course-item">-->
+<!--              <img src="{% static 'images/java.jpg' %}" class="img-fluid" alt="...">-->
+<!--              <div class="course-content">-->
+<!--                <div class="d-flex justify-content-between align-items-center mb-3">-->
+<!--                  <h4>Java</h4>-->
+<!--                  <p class="price">₹450</p>-->
+<!--                </div>-->
+
+<!--                <h3><a href="course-details.html">Java Full Course</a></h3>-->
+<!--                <p>Learn Java In This Course And Become a Computer Programmer. Obtain valuable Core Java Skills And Java Certification</p>-->
+<!--                <div class="trainer d-flex justify-content-between align-items-center">-->
+<!--                  <div class="trainer-profile d-flex align-items-center">-->
+<!--                    <img src="{% static 'images/trainers/Harsh.jpeg' %}"   class="img-fluid" alt="">-->
+<!--                    <span>Your Name</span>-->
+<!--                  </div>-->
+<!--                  <div class="trainer-rank d-flex align-items-center">-->
+<!--                    <i class="bx bx-user"></i>&nbsp;35-->
+<!--                    &nbsp;&nbsp;-->
+<!--                    <i class="bx bx-heart"></i>&nbsp;42-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div> &lt;!&ndash; End Course Item&ndash;&gt;-->
+
+<!--          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">-->
+<!--            <div class="course-item">-->
+<!--              <img src="{% static 'images/course-3.jpg' %}" class="img-fluid" alt="...">-->
+<!--              <div class="course-content">-->
+<!--                <div class="d-flex justify-content-between align-items-center mb-3">-->
+<!--                  <h4>Content</h4>-->
+<!--                  <p class="price">₹750</p>-->
+<!--                </div>-->
+
+<!--                <h3><a href="course-details.html">Copywriting</a></h3>-->
+<!--                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>-->
+<!--                <div class="trainer d-flex justify-content-between align-items-center">-->
+<!--                  <div class="trainer-profile d-flex align-items-center">-->
+<!--                    <img src="{% static 'images/trainers/Bhavik.jpeg' %}"  class="img-fluid" alt="">-->
+<!--                    <span>Your Name</span>-->
+<!--                  </div>-->
+<!--                  <div class="trainer-rank d-flex align-items-center">-->
+<!--                    <i class="bx bx-user"></i>&nbsp;20-->
+<!--                    &nbsp;&nbsp;-->
+<!--                    <i class="bx bx-heart"></i>&nbsp;85-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div> &lt;!&ndash; End Course Item&ndash;&gt;-->
+
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </section>&lt;!&ndash; End Popular Courses Section &ndash;&gt;-->
+
+<!--    &lt;!&ndash; ======= Trainers Section ======= &ndash;&gt;-->
+<!--    <section id="trainers" class="trainers">-->
+<!--      <div class="container" data-aos="fade-up">-->
+
+<!--        <div class="row" data-aos="zoom-in" data-aos-delay="100">-->
+<!--          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">-->
+<!--            <div class="member">-->
+<!--              <img src="{% static 'images/trainers/trainer-4.jpeg' %}" class="img-fluid" alt="">-->
+<!--              <div class="member-content">-->
+<!--                <h4>Your Name</h4>-->
+<!--                <span>Full Stack Developer</span>-->
+<!--                <p>-->
+<!--                  We are looking for a Full Stack Developer to produce scalable software solutions.-->
+<!--                  You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to deployment.-->
+<!--                </p>-->
+<!--                <div class="social">-->
+<!--                  <a href=""><i class="bi bi-twitter"></i></a>-->
+<!--                  <a href="https://www.facebook.com/Jitendra5543/"><i class="bi bi-facebook"></i></a>-->
+<!--                  <a href="https://www.instagram.com/__jainish_desai__/"><i class="bi bi-instagram"></i></a>-->
+<!--                  <a href="https://www.linkedin.com/in/jitendra-desai-277b65170/"><i class="bi bi-linkedin"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">-->
+<!--            <div class="member">-->
+<!--              <img src="{% static 'images/trainers/Harsh.jpeg' %}"  class="img-fluid" alt="">-->
+<!--              <div class="member-content">-->
+<!--                <h4>Your Name</h4>-->
+<!--                <span>Full Stack Developer</span>-->
+<!--                <p>-->
+<!--                  We are looking for a Full Stack Developer to produce scalable software solutions.-->
+<!--                  You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to deployment.-->
+<!--                </p>-->
+<!--                <div class="social">-->
+<!--                  <a href=""><i class="bi bi-twitter"></i></a>-->
+<!--                  <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                  <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                  <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">-->
+<!--            <div class="member">-->
+<!--              <img src="{% static 'images/trainers/Bhavik.jpeg' %}" class="img-fluid" alt="">-->
+<!--              <div class="member-content">-->
+<!--                <h4>Your Name</h4>-->
+<!--                <span>Full Stack Developer</span>-->
+<!--                <p>-->
+<!--                  We are looking for a Full Stack Developer to produce scalable software solutions.-->
+<!--                  You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to deployment.-->
+<!--                </p>-->
+<!--                <div class="social">-->
+<!--                  <a href=""><i class="bi bi-twitter"></i></a>-->
+<!--                  <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                  <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                  <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </section>&lt;!&ndash; End Trainers Section &ndash;&gt;-->
+
+<!--  </main>&lt;!&ndash; End #main &ndash;&gt;-->
+
+<!--  &lt;!&ndash; ======= Footer ======= &ndash;&gt;-->
+<!--  <footer id="footer">-->
+
+<!--    <div class="footer-top">-->
+<!--      <div class="container">-->
+<!--        <div class="row">-->
+
+<!--          <div class="col-lg-3 col-md-6 footer-contact">-->
+<!--            <h3>E-Learning</h3>-->
+<!--            <p>-->
+<!--              College Of Engineering,<br>-->
+<!--              University Area,<br>-->
+<!--              Ahmedabad <br><br>-->
+<!--              <strong>Phone:</strong> 111122233<br>-->
+<!--              <strong>Email:</strong> Mcaproject@gmail.com<br>-->
+<!--            </p>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-2 col-md-6 footer-links">-->
+<!--            <h4>Useful Links</h4>-->
+<!--            <ul>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>-->
+<!--            </ul>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-3 col-md-6 footer-links">-->
+<!--            <h4>Our Services</h4>-->
+<!--            <ul>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>-->
+<!--            </ul>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-4 col-md-6 footer-newsletter">-->
+<!--            <h4>Join Our Newsletter</h4>-->
+<!--            <p> Signup today for free and be the first to get notified on new updates.</p>-->
+<!--            <form action="" method="post">-->
+<!--              <input type="email" name="email"><input type="submit" value="Subscribe">-->
+<!--            </form>-->
+<!--            <img src="{% static 'images/moi.jpeg' %}"  class="img-fluid" alt="">-->
+<!--          </div>-->
+
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="container d-md-flex py-4">-->
+
+<!--      <div class="me-md-auto text-center text-md-start">-->
+<!--        <div class="copyright">-->
+<!--          &copy; Copyright <strong><span>E-School</span></strong>. All Rights Reserved-->
+<!--        </div>-->
+<!--        <div class="credits">-->
+<!--          &lt;!&ndash; All the links in the footer should remain intact. &ndash;&gt;-->
+<!--          &lt;!&ndash; You can delete the links only if you purchased the pro version. &ndash;&gt;-->
+<!--          &lt;!&ndash; Licensing information: https://bootstrapmade.com/license/ &ndash;&gt;-->
+<!--          &lt;!&ndash; Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ &ndash;&gt;-->
+<!--          Designed by <a href="https://bootstrapmade.com/">Sumit Singh Rajput</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="social-links text-center text-md-right pt-3 pt-md-0">-->
+<!--        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>-->
+<!--        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>-->
+<!--        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>-->
+<!--        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>-->
+<!--        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </footer>&lt;!&ndash; End Footer &ndash;&gt;-->
+
+<!--  <div id="preloader"></div>-->
+<!--  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>-->
+
+<!--  &lt;!&ndash; Vendor JS Files &ndash;&gt;-->
+<!--  <script src="{% static 'vendor/purecounter/purecounter.js' %}"></script>-->
+<!--  <script src="{% static 'vendor/aos/aos.js' %}"></script>-->
+<!--  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>-->
+<!--  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>-->
+<!--  <script src="{% static 'vendor/php-email-form/validate.js'%}"></script>-->
+
+<!--  &lt;!&ndash; Template Main JS File &ndash;&gt;-->
+<!--  <script src="{% static 'js/main.js' %}"></script>-->
+
+</body>
+
+</html>
+
+    <body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="{% url 'login' %}"><b>Student </b>Management System</a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body login-card-body">
+      <p class="login-box-msg">Sign in to Student Management System</p>
+
+      <form action="{% url 'doLogin' %}" method="POST">
+      {% csrf_token %}
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Email" name="email">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="Password" name="password">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+          </div>
+
+          {% comment %} <div class="col-12 text-center">
+            <a href="{% url 'password_reset' %}">Reset Password</a>
+          </div>  {% endcomment %}
+
+          {% comment %} Display Messages {% endcomment %}
+          {% if messages %}
+          <div class="col-12">
+            {% for message in messages %}
+              {% if message.tags == "error" %}
+                <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top: 10px;">
+                  {{ message }}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+          {% endif %}
+
+          <!-- /.col -->
+        </div>
+      </form>
+
+
+  </div>
+</div>
+<!-- /.login-box -->
+
+{% endblock %}
